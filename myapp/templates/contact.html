@@ -1,0 +1,188 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Contact Us</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="{% url 'index' %}"><img src="{% static 'img/KDA.png' %}" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">certificates</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">certificates</a></li>
+								</ul>
+							</li>
+							<li class="nav-item active"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Contact Us</h2>
+                    <div class="page_link">
+                        <a href="{% url 'index' %}">Home</a>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Banner Area =================-->
+    
+    <!--================Contact Area =================-->
+    <section class="contact_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>Hyderabad, India</h6>
+                            <p>Korlepara Durga Anuroop</p>
+                        </div>
+                        <div class="info_item">
+                            <i class="lnr lnr-phone-handset"></i>
+                            <h6><a href="#">+918499904287</a></h6>
+                            <p>Mon to Fri 9am to 6 pm</p>
+                        </div>
+                        <div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6><a href="#">koreleparaanuroop@gmail.com</a></h6>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-12">
+                            <div class="subscription_box text-center">
+                                <h2 class="text-uppercase text-white">get update from anywhere</h2>
+                                <p class="text-white">
+                                    Stay Informed, Anytime, Anywhere 
+                                </p>
+                                <div class="subcribe-form" id="mc_embed_signup">
+                                    <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+                                        <!--<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+                                        <div style="position: absolute; left: -5000px;">
+                                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                        </div>-->
+                                        <a href="mailto:korleparaanuroop@gmail.com" class="primary-btn hover d-inline" style="padding: 15px 30px; font-size: 18px; border-radius: 8px;">
+                                            Let's Connect Here
+                                        </a>
+                                        
+                                        
+                                            <div class="info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mapBox" class="mapBox" 
+     data-lat="17.500319489042223" 
+     data-lon="78.39391018307113" 
+     data-zoom="13" 
+     data-info=" Road no7, Addagutta Society - HMT Hills Rd, opposite Vvd plaza, Kukatpally Housing Board Colony, Hyderabad, Telangana 500072." 
+     data-mlat="17.500319489042223" 
+     data-mlon="78.39391018307113">  
+     <a href="https://maps.app.goo.gl/zVvWJJR1bEBn6cef7" target="_blank">View on Google Maps</a>           
+</div>
+
+        </div>
+    </section>
+    <!--================Contact Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="footer_top flex-column">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="{% static 'img/KDA.png' %}" alt="">
+                                </a>
+                                <h4>Follow Me</h4>
+                            </div>
+                            <div class="footer_social">
+                                <a href="https://www.facebook.com/profile.php?id=61563578879546"><i class="fa fa-facebook"></i></a>
+                                <a href="https://x.com/hema1821034"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/__anuroop_anu_k__?igsh=MWsydDJiZHJ4d3BmMg%3D%3D&utm_source=qr"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/korlepara-durga-anuroop-41b3a4246/"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer_bottom justify-content-center">
+                    <p class="col-lg-8 col-sm-12 footer-text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    <script>document.write(new Date().getFullYear());</script> This template is made by <i class="fa fa-heart-o" aria-hidden="true"></i>  <a target="_blank">Anuroop</a>
+    </p>
+                </div>
+            </div>
+        </footer>
+    <!--================End Footer Area =================-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/stellar.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+    <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{5 static 'js/mail-script.js' %}"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="{% static 'js/gmaps.min.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>
